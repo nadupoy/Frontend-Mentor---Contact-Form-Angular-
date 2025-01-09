@@ -1,5 +1,5 @@
 <form id="contact-form">
-  <div>
+  <section class="name">
     <label for="firstName"> First Name <span>*</span> </label>
     <input type="text" id="firstName" name="firstName" required />
     <p class="error-message">This field is required</p>
@@ -7,29 +7,33 @@
     <label for="lastName"> Last Name <span>*</span> </label>
     <input type="text" id="lastName" name="lastName" required />
     <p class="error-message">This field is required</p>
-  </div>
+  </section>
 
   <label for="emailAddress"> Email Address <span>*</span> </label>
   <input type="email" id="emailAddress" name="emailAddress" />
   <p class="error-message">Please enter a valid email address</p>
 
-  <section>
+  <section class="query-type">
     <p>Query Type <span>*</span></p>
-    <input
-      type="radio"
-      id="generalEnquiry"
-      name="query_type"
-      value="general enquiry"
-    />
-    <label for="generalEnquiry">General Enquiry</label>
+    <div class="query-option">
+      <input
+        type="radio"
+        id="generalEnquiry"
+        name="query_type"
+        value="general enquiry"
+      />
+      <label for="generalEnquiry">General Enquiry</label>
+    </div>
 
-    <input
-      type="radio"
-      name="query_type"
-      id="supportRequest"
-      value="support request"
-    />
-    <label for="supportRequest">Support Request</label>
+    <div class="query-option">
+      <input
+        type="radio"
+        name="query_type"
+        id="supportRequest"
+        value="support request"
+      />
+      <label for="supportRequest">Support Request</label>
+    </div>
   </section>
   <p class="error-message">Please select a query type</p>
 
@@ -37,11 +41,15 @@
   <textarea name="message" id="message" form="contact-form"></textarea>
   <p class="error-message">This field is required</p>
 
-  <input type="checkbox" id="consent" name="consent" value="consent" />
-  <label for="consent"
-    >I consent to being contacted by the team <span>*</span></label
-  >
-  <p class="error-message">To submit this form, please consent to being contacted</p>
+  <div class="checkbox-consent">
+    <input type="checkbox" id="consent" name="consent" value="consent" />
+    <label for="consent"
+      >I consent to being contacted by the team <span>*</span></label
+    >
+  </div>
+  <p class="error-message">
+    To submit this form, please consent to being contacted
+  </p>
 
   <input type="submit" value="Submit" />
 </form>
