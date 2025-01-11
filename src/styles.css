@@ -19,19 +19,21 @@
   --font-size-labels: 16px;
 }
 
-* {
-  margin: 0;
-  font-family: "Karla", sans-serif;
-  color: var(--grey-900-darker);
-}
+/* Mobile Devies */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  * {
+    margin: 0;
+    font-family: "Karla", sans-serif;
+    color: var(--grey-900-darker);
+  }
 
-html {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-}
+  html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
-body {
-  background-color: var(--green-200-lighter);
-  margin: auto;
+  body {
+    background-color: var(--green-200-lighter);
+  }
 }
