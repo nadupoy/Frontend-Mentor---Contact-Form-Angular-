@@ -27,3 +27,31 @@
     font-weight: bolder;
   }
 }
+
+/* Medium to Large Devices */
+@media screen and (min-width: 768px) {
+  main {
+    background-color: var(--white);
+    width: 640px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-radius: 16px;
+  }
+
+  h2 {
+    width: 90%;
+    margin: auto;
+  }
+
+  footer {
+    font-size: small;
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  footer a,
+  footer a:visited {
+    text-decoration: none;
+    font-weight: bolder;
+  }
+}

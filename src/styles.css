@@ -37,3 +37,23 @@
     background-color: var(--green-200-lighter);
   }
 }
+
+/* Medium to Large Devices */
+@media screen and (min-width: 768px) {
+  * {
+    margin: 0;
+    font-family: "Karla", sans-serif;
+    color: var(--grey-900-darker);
+  }
+
+  html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    background-color: var(--green-200-lighter);
+  }
+}
