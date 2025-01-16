@@ -6,7 +6,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
   standalone: true,
   imports: [ContactFormComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  // styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'contact-form';
